@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+*{
+  height: 100%;
+  width: 100%;
+  font-family: "Helvetica";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Main {
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
+  /* background-color:red;   */
+  display: flex;
+}
+.Left{
+  width: 40%;
+  height: 100%;
+  /* position: relative; */
+  /* background-color: blue; */
+}
+.Right{
+  width:60%;
+  height: 100%;
+  /* background-color: green; */
+}
+.RightTop{
+  height:55%;
+  width:100%;
+  /* background-color: black; */
+  display: flex;
+}
+.RightBottom{
+  height:45%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1528295674080-a70f6cbf4ff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGp1bmdsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-position:bottom;
+  background-size: cover;
+}
+.RightTopLeft{
+  width: 55%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1508730328641-47c1616341b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGFjaGlldmVtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+}
+.RightTopRight{
+  width: 45%;
+  height: 100%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1670344891799-c40f8a0b449e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+}
+.LeftNav{
+  margin:20px 0px;
+  width:100%;
+  height:10%;
+  /* background-color: rgb(216, 136, 32); */
+  display: flex;
+}
+.LeftNavLeft{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items:center;
+  /* justify-content: center; */
+  /* background-color: aqua; */
+}
+.LeftNavRight{
+  width:70%;
+  height: 100%;
+  /* background-color: blueviolet; */
+  display: flex;
+  
+}
+.LeftNavRight a{
+  text-decoration: none;
+  color: black;
+  font-weight: 750;
+  font-size: 14px;
+}
+.LeftNavRight i{
+  color: royalblue;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.BackButton i{
+  font-size: 30px;
+  margin-left:25px;
+  height:20px;
+  width:20px;
+  /* background-color: blue; */
 }
+.HomeSection{
+  
+  margin-top: 5px;
+}
+.AboutSection{
+  margin-top: 5px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  /* background-color: green; */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.TwitterIconWrapper{
+
+  font-size: 30px;
+
+}
+.Left.LeftBodyText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+.LeftBodyText{
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(163, 88, 238); */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Heading{
+  height:auto;
+  width:320px;
+  font-size: 90px;
+  font-weight: 900;
+  /* background-color: rgb(182, 123, 221); */
 }
+.Text{
+  height:auto;
+  width:320px;
+  font-size: 15px;
+  opacity: .6;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* background-color: rgb(162, 216, 238); */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.ReadLinkWrapper{
+  height:auto;
+  width:320px;
+  
+  
+
+
+  /* background-color: bisque; */
+
+}
+.ReadLinkWrapper a{
+  text-decoration: none;
+  color:black;
+  font-size: 14px;
+  opacity: .6;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+@media(max-width:500px)
+{
+  .Main{
+    flex-direction: column;
+    
+    
   }
-  to {
-    transform: rotate(360deg);
+  .Left{
+    width: 100%;
+    margin-bottom: 50px;
+    
+  }
+  .Right{
+    
+    width: 100%;
+  }
+  .RightTop{
+    flex-direction: column;
+  }
+  .RightTopLeft{
+    width: 100%;
+  }
+  .RightTopRight{
+    width: 100%;
   }
 }
