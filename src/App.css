@@ -87,12 +87,11 @@
   width:20px;
   /* background-color: blue; */
 }
-.HomeSection{
-  
+/* .HomeSection{
   margin-top: 5px;
-}
+} */
 .AboutSection{
-  margin-top: 5px;
+  margin-top: 2px;
   display: flex;
   align-items:center;
   justify-content: center;
@@ -100,9 +99,7 @@
 
 }
 .TwitterIconWrapper{
-
   font-size: 30px;
-
 }
 .Left.LeftBodyText{
   position: absolute;
@@ -141,12 +138,6 @@
 .ReadLinkWrapper{
   height:auto;
   width:320px;
-  
-  
-
-
-  /* background-color: bisque; */
-
 }
 .ReadLinkWrapper a{
   text-decoration: none;
